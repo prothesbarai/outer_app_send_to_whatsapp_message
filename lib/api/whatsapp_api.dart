@@ -20,7 +20,7 @@ class WhatsappApi {
           {
             "type": "body",
             "parameters": [
-              { "type": "text", "text": "Prothes" }
+              { "type": "text", "text": message }
             ]
           }
         ]
