@@ -9,7 +9,7 @@ class WhatsappApi {
   Future<void> sendText(String receiverPhnNo, String message) async {
     final url = Uri.parse("https://graph.facebook.com/v20.0/$phoneNumberId/messages");
 
-    final data = {"messaging_product": "whatsapp", "to": receiverPhnNo, "type": "text", "text": {"body": message}};
+    final data = {"messaging_product": "whatsapp", "to": "${88}$receiverPhnNo", "type": "text", "text": {"body": message}};
 
     try {
       final response = await http.post(
