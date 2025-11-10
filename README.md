@@ -91,6 +91,41 @@ Flutter এ ব্যবহার করার জন্য শুধুমা�
 ✅ **Long-Lived Access Token**
 
 ------------------------------------------------------------------------
+## ✅ আপনার Business Number কীভাবে বের করবেন?
+👉 https://business.facebook.com/wa/manage/phone-numbers/
+- এখানে দেখবেন:
+
+- Phone Number: +8801XXXXXXXXX
+- Phone Number ID: 893XXXXXXXXXXXX
+------------------------------------------------------------------------
+
+## ✅ নিজের Template তৈরি করুন
+👉 https://business.facebook.com/wa/manage/message-templates
+- Create Template ক্লিক করুন।
+- Template Name: first_message
+- Category: Utility / Marketing (text only হলে Utility ভালো)
+- Language: English (en_US)
+
+```dart
+    final data = {
+        "messaging_product": "whatsapp",
+        "to": "+88$receiverPhnNo",
+        "type": "template",
+        "template": {
+          "name": "first_template",
+          "language": { "code": "en_US" },
+          "components": [
+            {
+              "type": "body",
+              "parameters": [
+                { "type": "text", "text": "Prothes" }
+              ]
+            }
+          ]
+        }
+      };
+```
+------------------------------------------------------------------------
 
 ## ✅ GitHub Repository
 
