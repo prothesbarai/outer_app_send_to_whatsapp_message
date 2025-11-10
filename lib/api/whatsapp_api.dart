@@ -14,26 +14,17 @@ class WhatsappApi {
     try {
       final response = await http.post(
         url,
-        headers: {
-          "Authorization": "Bearer $accessToken",
-          "Content-Type": "application/json",
-        },
+        headers: {"Authorization": "Bearer $accessToken", "Content-Type": "application/json",},
         body: jsonEncode(data),
       );
 
       if (response.statusCode == 200) {
-        if (kDebugMode) {
-          print("Message sent : ${response.body}");
-        }
+        if (kDebugMode) {print("Message sent : ${response.body}");}
       } else {
-        if (kDebugMode) {
-          print("Failed : ${response.statusCode} ${response.body}");
-        }
+        if (kDebugMode) {print("Failed : ${response.statusCode} ${response.body}");}
       }
     } catch (e) {
-      if (kDebugMode) {
-        print("Error sending message: $e");
-      }
+      if (kDebugMode) {print("Error sending message: $e");}
       rethrow;
     }
   }
