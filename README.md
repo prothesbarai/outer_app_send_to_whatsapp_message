@@ -99,6 +99,9 @@ Flutter এ ব্যবহার করার জন্য শুধুমা�
 - Phone Number ID: 893XXXXXXXXXXXX
 ------------------------------------------------------------------------
 
+✅ এই template message 100% deliver হবে, আপনার personal WhatsApp number-এ
+✅ আপনাকে Hi পাঠাতে হবে না
+✅ Session rule applicable না — কারণ এটি Template
 ## ✅ নিজের Template তৈরি করুন
 👉 https://business.facebook.com/wa/manage/message-templates
 - Create Template ক্লিক করুন।
