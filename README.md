@@ -1,12 +1,6 @@
 # 🚀 WhatsApp Cloud API Setup Guide (Updated 2025)
 
-এই README.md ফাইলটি **WhatsApp Cloud API App Create Step-by-Step**
-গাইডলাইন + আপনার GitHub প্রজেক্ট\
-👉 https://github.com/prothesbarai/outer_app_send_to_whatsapp_message\
-এর জন্য প্রস্তুত করা হলো।
-
-------------------------------------------------------------------------
-
+**WhatsApp Cloud API App Create Step-by-Step**
 ## ✅ Step 1: Go to Meta Developer Dashboard
 
 🔗 https://developers.facebook.com/apps/
