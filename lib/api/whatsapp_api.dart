@@ -7,7 +7,7 @@ class WhatsappApi {
   final String fromPhoneNumberId = "893804690476575";
 
   Future<void> sendText(String receiverPhnNo, String message) async {
-    final url = Uri.parse("https://graph.facebook.com/v20.0/$fromPhoneNumberId/messages");
+    final url = Uri.parse("https://graph.facebook.com/v22.0/$fromPhoneNumberId/messages");
 
     /*final data = {
       "messaging_product": "whatsapp",
