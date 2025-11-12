@@ -9,7 +9,7 @@ class WhatsappApi {
   Future<void> sendText(String receiverPhnNo, String message) async {
     final url = Uri.parse("https://graph.facebook.com/v20.0/$phoneNumberId/messages");
 
-    final data = {
+    /*final data = {
       "messaging_product": "whatsapp",
       "to": "+88$receiverPhnNo",
       "type": "template",
@@ -26,7 +26,17 @@ class WhatsappApi {
           }
         ]
       }
+    };*/
+
+    final data = {
+      "messaging_product": "whatsapp",
+      "to": receiverPhnNo,
+      "type": "text",
+      "text": {
+        "body": "এইখানে তোমার 500 character পর্যন্ত message লিখতে পারবে।"
+      }
     };
+
 
 
     try {
