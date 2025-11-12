@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 
 class WhatsappApi {
-  final String accessToken = "EAALvlPgeNEIBP7BOorVzSGAgfU5l4A8ewZCLCppRnK6IG1t3Ee8R8fkwdRJkfm0xZBkZC0oCh9s0IrqCF1uZChZAAKCfHkYtwdTwwZC8tmlbqL7eMeHsD7eGmuXuEu6p66oGaZCdkP73cdXv8L3tOr4JOqycBaIC73lJi6wS5It5ZCtCisc5iEqLedGm3AysMp3aOa533givF4zAY6Q99Bf4Eb62DoIgp6ET4p44L7u55egJIppKPop8Plul5uZBqbQUZBGUPQeOohCcZB61CUZBa4JO9euHNqr7qONJUQZDZD";
+  final String accessToken = "EAALvlPgeNEIBPyf3ymhHn63xihunLoRbSZA34Slqii4ZBdIZCZAXY8ukZCZBBZA1AHWRVbPhzIGgUCd84DVMWuiq7ZBOdQKugOUSazQcqZA4QihJOhQ4iuCTg2Qa5LhDp7me0BofxSNtAB6a5prQoZCVmjWoMV0STOZCFzdNl5l8FIylYrEjIYB5zL2YoqodtINygZDZD";
   final String phoneNumberId = "893804690476575";
 
   Future<void> sendText(String receiverPhnNo, String message) async {
@@ -20,7 +20,8 @@ class WhatsappApi {
           {
             "type": "body",
             "parameters": [
-              { "type": "text", "text": message }
+              {"type": "text", "text": "Prothes"},
+              {"type": "text", "text": message},
             ]
           }
         ]

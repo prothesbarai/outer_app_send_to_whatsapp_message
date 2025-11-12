@@ -135,6 +135,33 @@ Flutter এ ব্যবহার করার জন্য শুধুমা�
 🔗 https://github.com/prothesbarai/outer_app_send_to_whatsapp_message
 
 ------------------------------------------------------------------------
+------------------------------------------------------------------------
+## Get Permanent Token Instruction
+- Permanent Token (System User Token) পেতে যেটা করতে হবে সেটা একটু ভিন্নভাবে করতে হবে কারণ WhatsApp Cloud API recent update অনুযায়ী Business Manager থেকে System User token generate করা হয়।
+
+### Step 1: Facebook Business Manager লগইন করো
+- লিঙ্ক: https://business.facebook.com
+- তোমার Business Account সিলেক্ট করো, যেটা WhatsApp Business Account-এর সঙ্গে linked
+
+### Step 2: Business Settings → Users → System Users
+- Business Settings → Users → System Users এ যাও
+- Add System User → Role: Admin বা Employee
+- System User তৈরি করলে, সেই user-এর জন্য Generate New Token অপশন আসবে
+
+### Step 3: Assign Assets
+- Newly created System User select করো
+- Assigned Assets → WhatsApp Business Account / App assign করো
+- Permission দিন: whatsapp_business_messaging, whatsapp_business_management
+
+### Step 4: Generate Token
+- Token generate করলে copy করে রাখো
+- এই Token Permanent Token হিসেবে ব্যবহার করা যাবে (পুনঃ generate না করা পর্যন্ত)
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+
+
+
 
 ## ✅ Author
 
