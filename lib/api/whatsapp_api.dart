@@ -6,7 +6,7 @@ class WhatsappApi {
   static final String accessPermanentToken = "EAALvlPgeNEIBPyf3ymhHn63xihunLoRbSZA34Slqii4ZBdIZCZAXY8ukZCZBBZA1AHWRVbPhzIGgUCd84DVMWuiq7ZBOdQKugOUSazQcqZA4QihJOhQ4iuCTg2Qa5LhDp7me0BofxSNtAB6a5prQoZCVmjWoMV0STOZCFzdNl5l8FIylYrEjIYB5zL2YoqodtINygZDZD";
   static final String fromPhoneNumberId = "893804690476575";
 
-  static Future<Map<String,dynamic>?> sendText(String receiverPhnNo,String name,String order,String price) async {
+  static Future<Map<String,dynamic>?> sendText(String receiverPhnNo,String name,String orderDetails,String address) async {
     final url = Uri.parse("https://graph.facebook.com/v22.0/$fromPhoneNumberId/messages");
     /// >>> Template Format (Limitation -> 30-60 Char And Pre-approved)
     /*final data = {
@@ -42,34 +42,10 @@ class WhatsappApi {
                 *Date:* ${DateTime.now()}
                 *Customer:* $name
                 *Phone:* $receiverPhnNo
-                *Delivery Address:*
-                House-12, Road-5, Dhanmondi, Dhaka-1209
+                *Delivery Address:* $address
                 ━━━━━━━━━━━━━━━
                 *Order Details:*
-              
-                *Nike Air Max 270*
-                Qty: 3 pcs | ৳6,500 × 3 = ৳19,500
-                
-                *Adidas Ultraboost 22*
-                Qty: 2 pcs | ৳8,200 × 2 = ৳16,400
-                
-                *Apple AirPods Pro (2nd Gen)*
-                Qty: 1 pcs | ৳28,000 × 1 = ৳28,000
-                
-                *Levi’s Slim Fit Jeans*
-                Qty: 4 pcs | ৳2,800 × 4 = ৳11,200
-                
-                *Casio G-Shock Watch*
-                Qty: 2 pcs | ৳9,000 × 2 = ৳18,000
-                
-                ━━━━━━━━━━━━━━━
-                *Total:* ৳93,100  
-                *Delivery Charge:* ৳100  
-                *Grand Total:* ৳93,200  
-                
-                ━━━━━━━━━━━━━━━
-                *Payment Method:* Cash on Delivery  
-                *Status:* Pending Confirmation
+                $orderDetails
           """
       }
     };
