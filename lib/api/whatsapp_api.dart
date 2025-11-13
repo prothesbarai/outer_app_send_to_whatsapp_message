@@ -60,7 +60,7 @@ class WhatsappApi {
 
       if (response.statusCode == 200) {
         final result = jsonDecode(response.body);
-        if (kDebugMode) {print("$result");}
+        if (kDebugMode) {print("Success : $result");}
         return result;
       } else {
         if (kDebugMode) {print("Failed : ${response.statusCode} ${response.body}");}
