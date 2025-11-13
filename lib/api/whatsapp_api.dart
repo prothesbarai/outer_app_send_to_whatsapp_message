@@ -37,7 +37,7 @@ class WhatsappApi {
       "to": receiverPhnNo,
       "type": "text",
       "text": {
-        "body": "এইখানে তোমার 500 character পর্যন্ত message লিখতে পারবে।"
+        "body": "500 character message support"
       }
     };*/
 
