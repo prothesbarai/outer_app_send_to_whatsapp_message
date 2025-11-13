@@ -10,7 +10,7 @@ class WhatsappApi {
     final url = Uri.parse("https://graph.facebook.com/v22.0/$fromPhoneNumberId/messages");
 
     /// >>> Template Format (Limitation -> 30-60 Char And Pre-approved)
-    final data = {
+    /*final data = {
       "messaging_product": "whatsapp",
       "to": receiverPhnNo,
       "type": "template",
@@ -29,17 +29,53 @@ class WhatsappApi {
           }
         ]
       }
-    };
+    };*/
 
     /// >>> Simple Format (Limitation -> 400-500 Char And Required for cold messages)
-    /*final data = {
+    final data = {
       "messaging_product": "whatsapp",
       "to": receiverPhnNo,
       "type": "text",
       "text": {
-        "body": "500 character message support"
+        "body": """
+                🛍️ *New Order Received*
+                ━━━━━━━━━━━━━━━
+                🧾 *Order ID:* #ORD-20251113-A4F7
+                📅 *Date:* ${DateTime.now()}
+                👤 *Customer:* $name
+                📞 *Phone:* $receiverPhnNo
+                📍 *Delivery Address:*
+                House-12, Road-5, Dhanmondi, Dhaka-1209
+                ━━━━━━━━━━━━━━━
+                🛒 *Order Details:*
+              
+                1️⃣ *Nike Air Max 270*
+                Qty: 3 pcs | ৳6,500 × 3 = ৳19,500
+                
+                2️⃣ *Adidas Ultraboost 22*
+                Qty: 2 pcs | ৳8,200 × 2 = ৳16,400
+                
+                3️⃣ *Apple AirPods Pro (2nd Gen)*
+                Qty: 1 pcs | ৳28,000 × 1 = ৳28,000
+                
+                4️⃣ *Levi’s Slim Fit Jeans*
+                Qty: 4 pcs | ৳2,800 × 4 = ৳11,200
+                
+                5️⃣ *Casio G-Shock Watch*
+                Qty: 2 pcs | ৳9,000 × 2 = ৳18,000
+                
+                ━━━━━━━━━━━━━━━
+                💰 *Total:* ৳93,100  
+                🚚 *Delivery Charge:* ৳100  
+                🧾 *Grand Total:* ৳93,200  
+                
+                ━━━━━━━━━━━━━━━
+                💳 *Payment Method:* Cash on Delivery  
+                📦 *Status:* Pending Confirmation
+          """
       }
-    };*/
+    };
+
 
 
 
