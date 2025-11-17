@@ -192,6 +192,12 @@ https://developers.facebook.com/apps/
 ------------------------------------------------------------------------
 
 
+## Meta Deleloper Rules :: 
+https://developers.facebook.com/docs/development
+If You Check App Rule Type: 
+Docs > App Development with Meta > Create an App > Other App Types > App Types
+
+
 ## ✅ Author
 
 👨‍💻 **Prothes Barai**\
