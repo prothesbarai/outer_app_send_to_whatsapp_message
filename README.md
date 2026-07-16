@@ -1,4 +1,4 @@
-# 🚀 WhatsApp Cloud API Setup Guide (Updated 2025)
+# 🚀 WhatsApp Cloud API Setup Guide (Updated 2025-2026)
 
 **WhatsApp Cloud API App Create Step-by-Step**
 ## ✅ Step 1: Go to Meta Developer Dashboard

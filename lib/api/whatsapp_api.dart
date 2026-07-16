@@ -39,7 +39,7 @@ class WhatsappApi {
       "type": "template",
       "template": {
         "name": "order_confirmation_v1",
-        "language": {"code": "en_US"},
+        "language": {"code": "en"},
         "components": [
           {
             "type": "body",
