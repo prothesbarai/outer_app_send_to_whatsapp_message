@@ -1,4 +1,4 @@
-# 🚀 WhatsApp Cloud API Setup Guide (Updated 2025)
+# 🚀 WhatsApp Cloud API Setup Guide (Updated 2025-2026)
 
 **WhatsApp Cloud API App Create Step-by-Step**
 ## ✅ Step 1: Go to Meta Developer Dashboard
@@ -197,10 +197,28 @@ https://developers.facebook.com/docs/development
 If You Check App Rule Type: 
 Docs > App Development with Meta > Create an App > Other App Types > App Types
 
+------------------------------------------------------------------------
+
+## ✅ Project Configuration (.env Setup)
+
+To keep your credentials secure, this project uses a `.env` file. 
+
+1. Create a file named `.env` in the root of the project.
+2. Add the following dummy credentials (replace with your actual values):
+
+```env
+ACCESS_PERMANENT_TOKEN=your_permanent_token_here
+FROM_PHONE_NUMBER_ID=your_phone_number_id_here
+SENDER_NUMBER=your_whatsapp_sender_number_here
+```
+
+3. Ensure `.env` is added to your `.gitignore` to avoid leaking secrets.
+
+------------------------------------------------------------------------
 
 ## ✅ Author
 
-👨‍💻 **Prothes Barai**\
+👨‍💻 **[Prothes Barai](https://github.com/prothesbarai/)**\
 Software Engineer • Bangladesh
 
 ------------------------------------------------------------------------
